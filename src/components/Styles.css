@@ -59,7 +59,7 @@
 
 .list-items {
     display: flex;
-    width: 50%;
+    width: 25%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -144,4 +144,10 @@
     padding-bottom: 10px;
     color: rgb(135, 135, 135);
     text-shadow: 0px 0px 0px #fff, 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+    .list-items {
+        width: 70%;
+    }
 }

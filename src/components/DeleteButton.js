@@ -1,14 +1,17 @@
 import React from "react";
 
 const DeleteButton = (props) => {
-  let deleteFromArray = [];
-
   const deleteItem = () => {
-    deleteFromArray = props.newValue.filter((data) => {
-      return data !== props.dataValue;
-    });
-    props.deleteValue([...deleteFromArray]);
-    props.fullValue([...deleteFromArray]);
+    props.fullValue(
+      props.choosenValue.filter((data) => {
+        return data !== props.dataValue;
+      })
+    );
+    props.deleteValue(
+      props.newValue.filter((data) => {
+        return data !== props.dataValue;
+      })
+    );
     console.log(props.newValue);
   };
   return (

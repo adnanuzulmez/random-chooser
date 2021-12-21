@@ -15,8 +15,8 @@ const Main = () => {
     if (value === "") {
       alert("alan boş olamaz");
     } else {
-      setItems([...items, value]);
-      setTempItems([...tempItems, value]);
+      setItems([value, ...items]);
+      setTempItems([value, ...tempItems]);
       setValue("");
       e.preventDefault();
     }
@@ -55,6 +55,7 @@ const Main = () => {
                     deleteValue={setItems}
                     newValue={items}
                     fullValue={setTempItems}
+                    choosenValue={tempItems}
                   />
                 </li>
               );

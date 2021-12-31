@@ -39,7 +39,7 @@ const Main = () => {
       </form>
       <div className="list-container">
         <div className="list-items">
-          <h4 className>Items</h4>
+          <h4>Items</h4>
           <ul className="list-elements">
             {items.map((data, index) => {
               return (
